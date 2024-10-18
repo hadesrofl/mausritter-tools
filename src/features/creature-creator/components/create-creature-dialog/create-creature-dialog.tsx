@@ -9,8 +9,8 @@ import { useState } from 'react';
 import { Button, DialogActions, Grid2 } from '@mui/material';
 import Close from '@mui/icons-material/Close';
 
-export default function CreateCreatureDialog({ open, onClose }: DialogProps<void, Creature | undefined>) {
-    const [creature, setCreature] = useState<Creature | undefined>(undefined);
+export default function CreateCreatureDialog({ payload, open, onClose }: DialogProps<Creature | undefined, Creature | undefined>) {
+    const [creature, setCreature] = useState<Creature | undefined>(payload);
 
     const handleCreatureCreation = (newCreature: Creature) => {
         setCreature(newCreature);
@@ -26,11 +26,11 @@ export default function CreateCreatureDialog({ open, onClose }: DialogProps<void
                 </Grid2>
             </DialogTitle>
             <DialogContent>
-                <CreatureWizard onChange={handleCreatureCreation} />
+                <CreatureWizard onChange={handleCreatureCreation} creature={creature} />
             </DialogContent>
             <DialogActions>
                 <Button color="error" onClick={handleAbort}>Abort</Button>
-                <Button color="primary" onClick={() => onClose(creature)}>Create</Button>
+                <Button color="primary" onClick={() => onClose(creature)}>{payload ? 'Save' : 'Create'}</Button>
             </DialogActions>
         </Dialog>);
 }

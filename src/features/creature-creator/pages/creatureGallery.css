@@ -1,0 +1,21 @@
+@media print {
+
+    header,
+    footer,
+    aside,
+    form,
+    .MuiDrawer-root,
+    div>h4,
+    div>button {
+        display: none;
+    }
+
+    * {
+        background-color: white;
+        color: black !important;
+    }
+}
+
+@page {
+    margin: 0cm;
+}
