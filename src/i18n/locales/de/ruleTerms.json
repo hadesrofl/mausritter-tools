@@ -1,0 +1,12 @@
+{
+  "Attributes": {
+    "hp": "TP",
+    "STR": "STÄ",
+    "DEX": "GES",
+    "WIL": "WIL"
+  },
+  "armor": "Rüstung",
+  "def": "VTD",
+  "attacks": "Angriffe",
+  "specialMoves": "Spielzüge"
+}

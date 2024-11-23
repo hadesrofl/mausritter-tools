@@ -1,0 +1,65 @@
+{
+  "Title": "Creature Creator",
+  "buttons": {
+    "saveInBrowser": "Save in Browser",
+    "abort": "Abort",
+    "save": "Save",
+    "create": "Create"
+  },
+  "labels": {
+    "dialogCreateTitle": "Create Creature",
+    "dialogEditTitle": "Edit Creature",
+    "name": "name",
+    "enduranceOfCreature": "Endurance of Creature",
+    "strengthOfCreature": "Strength of Creature",
+    "agilityOfCreature": "Agility of Creature",
+    "spiritOfCreature": "Spirit of Creature",
+    "armorOfCreature": "Armor of Creature",
+    "heart_one": "{{count}} heart",
+    "heart_other": "{{count}} hearts",
+    "muscle_one": "{{count}} muscle",
+    "muscle_other": "{{count}} muscles",
+    "runner_one": "{{count}} foot",
+    "runner_other": "{{count}} feet",
+    "head_one": "{{count}} head",
+    "head_other": "{{count}} heads",
+    "shield_one": "{{count}} shield",
+    "shield_other": "{{count}} shields"
+  },
+  "ratings": {
+    "hpDescriptions": {
+      "notAFighter": "not a fighter",
+      "outOfBreath": "out of breath",
+      "moderateFighter": "moderate fighter",
+      "veteran": "veteran",
+      "likeABoss": "like a boss"
+    },
+    "strDescriptions": {
+      "weak": "weak",
+      "skipsLegDay": "skips leg day",
+      "fit": "fit",
+      "strong": "strong",
+      "pullsTrucks": "pulls trucks"
+    },
+    "dexDescriptions": {
+      "canBarelyWalk": "can barely walk",
+      "clumsy": "clumsy",
+      "moderate": "moderate",
+      "nimble": "nimble",
+      "ninja": "ninja"
+    },
+    "wilDescriptions": {
+      "iAmGroot": "I am groot",
+      "singleMinded": "single minded",
+      "ordinary": "ordinary",
+      "strongWilled": "strong willed",
+      "aBeautifulMind": "a beautiful mind"
+    },
+    "armorDescriptions": {
+      "noArmor": "no armor",
+      "lightArmored": "light armored",
+      "wearsArmor": "wears armor",
+      "tank": "tank"
+    }
+  }
+}

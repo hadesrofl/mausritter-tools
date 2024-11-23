@@ -1,0 +1,65 @@
+{
+  "Title": "Kreaturen-Generator",
+  "buttons": {
+    "saveInBrowser": "Im Browser speichern",
+    "abort": "Abbrechen",
+    "save": "Speichern",
+    "create": "Erstellen"
+  },
+  "labels": {
+    "dialogCreateTitle": "Kreatur erstellen",
+    "dialogEditTitle": "Kreatur ändern",
+    "name": "Name",
+    "enduranceOfCreature": "Konstitution der Kreatur",
+    "strengthOfCreature": "Stärke der Kreatur",
+    "agilityOfCreature": "Geschick der Kreatur",
+    "spiritOfCreature": "Geisteskraft der Kreatur",
+    "armorOfCreature": "Panzerung der Kreatur",
+    "heart_one": "{{count}} Herz",
+    "heart_other": "{{count}} Herzen",
+    "muscle_one": "{{count}} Muskel",
+    "muscle_other": "{{count}} Muskeln",
+    "runner_one": "{{count}} Fuß",
+    "runner_other": "{{count}} Füße",
+    "head_one": "{{count}} Kopf",
+    "head_other": "{{count}} Köpfe",
+    "shield_one": "{{count}} Schild",
+    "shield_other": "{{count}} Schilde"
+  },
+  "ratings": {
+    "hpDescriptions": {
+      "notAFighter": "keine Kämpfer:in",
+      "outOfBreath": "Außer Atem",
+      "moderateFighter": "Moderate Kämpfer:in",
+      "veteran": "Veteran:in",
+      "likeABoss": "eher so der Endboss-Typ"
+    },
+    "strDescriptions": {
+      "weak": "Schwach",
+      "skipsLegDay": "niemals Leg-Day",
+      "fit": "Fit",
+      "strong": "muskulös",
+      "pullsTrucks": "zieht LKWs"
+    },
+    "dexDescriptions": {
+      "canBarelyWalk": "Kann kaum gehen",
+      "clumsy": "tollpatschig",
+      "moderate": "mittelmäßig",
+      "nimble": "flink",
+      "ninja": "Ninja"
+    },
+    "wilDescriptions": {
+      "iAmGroot": "Ich bin Groot",
+      "singleMinded": "einfältig",
+      "ordinary": "gewöhnlich",
+      "strongWilled": "willensstark",
+      "aBeautifulMind": "Genie oder Wahnsinn"
+    },
+    "armorDescriptions": {
+      "noArmor": "keine Rüstung",
+      "lightArmored": "leichte Panzerung",
+      "wearsArmor": "trägt Rüstung",
+      "tank": "Panzer"
+    }
+  }
+}

@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,10 +22,26 @@
       }
     ],
     "paths": {
-      "@features/*": ["./src/features/*"],
-      "@shared/*": ["./src/shared/*"]
-    }
+      "@features/*": [
+        "./src/features/*"
+      ],
+      "@i18n/*": [
+        "./src/i18n/*"
+      ],
+      "@shared/*": [
+        "./src/shared/*"
+      ]
+    },
+    "target": "ES2017"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/features/creature-creator/components/Create-Creature-Stepper"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/features/creature-creator/components/Create-Creature-Stepper"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

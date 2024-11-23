@@ -1,0 +1,12 @@
+{
+  "Attributes": {
+    "hp": "hp",
+    "STR": "STR",
+    "DEX": "DEX",
+    "WIL": "WIL"
+  },
+  "armor": "armor",
+  "def": "def",
+  "attacks": "attacks",
+  "specialMoves": "special moves"
+}
