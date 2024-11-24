@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: mausritter-tools
-          path: ./out
+          path: out/**
 
   semVer:
     name: Release
@@ -43,14 +43,23 @@ jobs:
       pull-requests: write # to be able to comment on released pull requests
       id-token: write # to enable use of OIDC for npm provenance
     steps:
-      - name: Download build output
-        uses: actions/download-artifact@v4
-        with:
-          name: mausritter-tools
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Download build output
+        uses: actions/download-artifact@v4
+        with:
+          name: mausritter-tools
+          path: out/
+      - name: Rename output
+        run: mv out mausritter-tools
+      - name: Compress Build Output
+        uses: somaz94/compress-decompress@v1
+        with:
+          command: compress
+          source: ./mausritter-tools
+          format: zip
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
