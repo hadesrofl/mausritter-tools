@@ -30,7 +30,7 @@ jobs:
       - name: Upload output
         uses: actions/upload-artifact@v4
         with:
-          name: out
+          name: mausritter-tools
           path: ./out
 
   semVer:
@@ -43,6 +43,10 @@ jobs:
       pull-requests: write # to be able to comment on released pull requests
       id-token: write # to enable use of OIDC for npm provenance
     steps:
+      - name: Download build output
+        uses: actions/download-artifact@v4
+        with:
+          name: mausritter-tools
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -59,3 +63,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
+          
