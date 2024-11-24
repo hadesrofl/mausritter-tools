@@ -6,7 +6,9 @@
     [
       "@semantic-release/github",
       {
-        "assets": ["out/**"]
+        "assets": [
+          { "path": "out/**", "label": "mausritter-tools" }
+        ]
       }
     ],
     "@semantic-release/git"
